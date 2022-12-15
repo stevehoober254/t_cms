@@ -4,14 +4,6 @@ export default {
   title: 'Enrollments',
   fields: [
     {
-      name: 'date',
-      type: 'date',
-      title: 'Date',
-      options: {
-        default: Date.now(),
-      },
-    },
-    {
       name: 'name',
       type: 'string',
       title: 'Name',
