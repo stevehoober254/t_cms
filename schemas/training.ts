@@ -59,16 +59,16 @@ export default {
         type: 'number',
         title: 'Fee (Kshs)',
       },
-      {
-        name: 'start',
-        type: 'date',
-        title: 'Start Date',
-      },
-      {
-        name: 'end',
-        type: 'date',
-        title: 'End Date',
-      },
+      // {
+      //   name: 'start',
+      //   type: 'date',
+      //   title: 'Start Date',
+      // },
+      // {
+      //   name: 'end',
+      //   type: 'date',
+      //   title: 'End Date',
+      // },
       {
         title: 'gallery',
         name: 'gallery',
