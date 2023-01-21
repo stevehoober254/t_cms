@@ -56,8 +56,8 @@ export default {
       },
       {
         name: 'fee',
-        type: 'number',
-        title: 'Fee (Kshs)',
+        type: 'string',
+        title: 'Fee (Kshs)/Duration',
       },
       // {
       //   name: 'start',

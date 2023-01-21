@@ -1,8 +1,17 @@
+import { DateTimeInput } from "sanity";
+
 export default {
   name: 'Enrollments',
   type: 'document',
   title: 'Enrollments',
   fields: [
+    {
+      name: 'date_submitted',
+      title:'Date Submitted',
+      type: 'datetime',
+      initialValue: (new Date()).toISOString()
+
+    },
     {
       name: 'name',
       type: 'string',
