@@ -7,10 +7,9 @@ export default {
   fields: [
     {
       name: 'date_submitted',
-      title:'Date Submitted',
+      title: 'Date Submitted',
       type: 'datetime',
-      initialValue: (new Date()).toISOString()
-
+      initialValue: () => (new Date().toISOString())
     },
     {
       name: 'name',
