@@ -32,5 +32,33 @@ export default {
       type: 'string',
       title: 'Phone Number',
     },
+    {
+      name: 'trainerId',
+      type: 'reference', // Changed to 'reference'
+      title: 'Trainer',
+      to: [{ type: 'Trainer' }], // References the 'Trainer' document type
+    },
+    {
+      name: 'trainerName',
+      type: 'string',
+      title: 'Trainer Name',
+    },
+    {
+      name: 'enrolledAt',
+      type: 'datetime', // Use 'datetime' for ISO date strings
+      title: 'Enrolled At',
+    },
+    {
+      name: 'status',
+      type: 'string',
+      title: 'Status',
+      options: { // It's good practice to define possible values for status
+        list: [
+          { title: 'Pending', value: 'pending' },
+          { title: 'Confirmed', value: 'confirmed' },
+          { title: 'Cancelled', value: 'cancelled' },
+        ],
+      },
+    },
   ],
 }
