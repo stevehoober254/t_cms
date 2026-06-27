@@ -1,15 +1,23 @@
-import { DateTimeInput } from "sanity";
-
 export default {
   name: 'Enrollments',
   type: 'document',
   title: 'Enrollments',
+  preview: {
+    select: { title: 'name', subtitle: 'date_submitted' },
+    prepare({ title, subtitle }: { title: string; subtitle: string }) {
+      return {
+        title,
+        subtitle: subtitle ? new Date(subtitle).toLocaleString('en-KE') : 'No date',
+      };
+    },
+  },
   fields: [
     {
       name: 'date_submitted',
       title: 'Date Submitted',
       type: 'datetime',
-      initialValue: () => (new Date().toISOString())
+      readOnly: true,
+      description: 'Auto-set when the enrollment is submitted via the website.',
     },
     {
       name: 'name',

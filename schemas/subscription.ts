@@ -9,15 +9,11 @@ export default {
       title: 'Email'
     },
     {
-      name: 'subscribedat',
+      name: 'subscribedAt',
       type: 'datetime',
-      title: 'Subscribed At',
-      options: {
-        timeFormat: 'HH:mm',
-        dateFormat: 'YYYY-MM-DD',
-        calendarTodayLabel: 'Today',
-        initialValue: () => (new Date().toISOString())
-      }
+      title: 'Date Subscribed',
+      readOnly: true,
+      description: 'Auto-set when the subscription is submitted via the website.',
     },
     {
       name: 'status',
